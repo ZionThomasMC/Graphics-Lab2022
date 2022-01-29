@@ -1,0 +1,55 @@
+size(100, 100);     
+strokeWeight(1);
+background(255);
+
+line(0, 0, 0, 99);  
+line(0, 0, 99, 0);  
+line(99, 0, 99, 99);
+line(99, 99, 0, 99);
+int x = 10;
+int y = 0;
+int z = 10;
+int a = 99;
+//Vertical line
+line(x, y, z, a);
+line(x+10, y, z+10, a);
+line(x+20, y, z+20, a);
+line(x+30, y, z+30, a);
+line(x+40, y, z+40, a);
+line(x+50, y, z+50, a);
+line(x+60, y, z+60, a);
+line(x+70, y, z+70, a);
+line(x+80, y, z+80, a);
+int l = 0;
+int m = 10;
+int n = 99;
+int o = 10;
+//Horizontal lines
+line(l, m , n, o);
+line(l, m+10 , n, o+10);
+line(l, m+20 , n, o+20);
+line(l, m+30 , n, o+30);
+line(l, m+40 , n, o+40);
+line(l, m+50 , n, o+50);
+line(l, m+60 , n, o+60);
+line(l, m+70 , n, o+70);
+line(l, m+80 , n, o+80);
+strokeWeight(5);
+point(40, 50);  
+point(40, 70);
+point(60, 70);
+point(60, 50);
+point(50, 40);
+point(70, 40);
+point(70, 60);
+
+strokeWeight(2);
+line(40, 50, 60, 50);    
+line(40, 50, 40, 70);
+line(40, 70, 60, 70);
+line(60, 70, 60, 50);
+line(40, 50, 50, 40);
+line(50, 40, 70, 40);
+line(70, 40, 70, 60);
+line(70, 60, 60, 70);
+line(70, 40, 60, 50);
