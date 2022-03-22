@@ -11,9 +11,6 @@ class Circle {
 
 
   Circle(float tempX , float tempY, float tempR, float tempS) {
-    //x = 150;
-    //y = 200;
-    //r = 20;
     location.x = tempX;
     location.y = tempY;
     r = tempR;
@@ -28,13 +25,6 @@ class Circle {
       return false;
     }
   }
-
-  //Circle() {
-  //  x = 10 
-  // y = 200
-  // r = 20
-  
-  //}
 
 
   void motion() {
@@ -65,12 +55,7 @@ class Circle {
     }
     if (c2.overlaps(c1)) {
       velocity2 = PVector.random2D();
-      //velocity.x = velocity.x * -1;
-      //velocity.y = velocity.y * -1;
-      //velocity2.x = velocity2.x * -1;
-      //velocity2.y = velocity2.y * -1;
     }
-    //location.add(scatter);
     
     if ((location.x > width) || (location.x < 0)) {
       velocity.x = velocity.x * -1;
@@ -85,29 +70,9 @@ class Circle {
       velocity2.y = velocity2.y * -1;
     }
   }
-    
-    
-    
-    //velocity.y = velocity.y * -1;
-   // void motion2() {
-   //  x = x + 2;
-  //  y = y + 0;
-   // if (x > width) {
-    // x = x * -1;
-  //  }
-    // }
-    //if ((y > height) || (y < 0)) {
-    // y = y * -1;
-    //}
-  
-
-  
+ 
 
   void display() {
     ellipse(location.x, location.y, r, s);
   }
-
-  //void display2() {
-  //ellipse(location.x+365, location.y, r, r);
 }
-//}
